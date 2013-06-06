@@ -1,7 +1,7 @@
 Changes
-lib/Export/Tiny.pm
+lib/Exporter/Tiny.pm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 README
-t/Export-Tiny.t
-t/Export/Tiny.pm
+t/Exporter-Tiny.t
+t/Exporter/Tiny.pm

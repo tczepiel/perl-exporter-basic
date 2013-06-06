@@ -4,8 +4,8 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME              => 'Export::Tiny',
-    VERSION_FROM      => 'lib/Export/Tiny.pm',
+    NAME              => 'Exporter::Tiny',
+    VERSION_FROM      => 'lib/Exporter/Tiny.pm',
     PREREQ_PM         => {
         'Package::Stash' => 0,
     },
