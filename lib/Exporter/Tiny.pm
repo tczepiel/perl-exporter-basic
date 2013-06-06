@@ -65,6 +65,20 @@ Exporter::Tiny
     
     use MyApp qw( foo bar );
 
+=head1 DESCRIPTION
+
+Only the following export functionality is provided:
+
+=over 
+
+=item * export of constants, subroutines, scalars, arrays, hashes
+
+=item * everything defined for export is exported by default
+
+=item * common error checks
+
+=bach
+
 =head1 BUGS
 
 Please report any bugs on L<http://rt.cpan.org>
@@ -75,7 +89,7 @@ L<Exporter>
 
 =head1 AUTHOR
 
-Tomasz Czepiel E<lt>tjmc@cpan.orge<gt>
+Tomasz Czepiel E<lt>tjmc@cpan.orgeE<gt>
 
 =head1 LICENSE
 
