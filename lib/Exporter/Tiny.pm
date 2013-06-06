@@ -46,7 +46,6 @@ sub import {
         my $pkg   = caller();
         _import($class, $pkg, @_);
     });
-
 }
 
 

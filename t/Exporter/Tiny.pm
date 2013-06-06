@@ -1,7 +1,7 @@
 package t::Exporter::Tiny;
 
-use Exporter::Tiny qw(a);
+use Exporter::Tiny qw(foo);
 
-sub a { 1 }
+sub foo { 1 }
 
 1;
