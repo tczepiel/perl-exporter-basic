@@ -12,7 +12,8 @@ To install this module type the following:
 
 DEPENDENCIES
 
-Plack::Stash
+Package::Stash
+Scalar::Util
 
 AUTHOR
 
