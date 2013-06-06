@@ -8,6 +8,7 @@ WriteMakefile(
     VERSION_FROM      => 'lib/Exporter/Tiny.pm',
     PREREQ_PM         => {
         'Package::Stash' => 0,
+        'Scalar::Util'   => 0,
     },
     ($] >= 5.005 ?
       (ABSTRACT       => 'yet another symbol exporter...',
