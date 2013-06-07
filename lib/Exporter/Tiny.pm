@@ -24,7 +24,8 @@ sub _import {
         my $got_symbol = $pkg_stash->get_symbol($with_sigil);
 
         croak "$from doesn't export $symbol ($with_sigil)" unless $stash->has_symbol($with_sigil);
-        croak "$from already has $symbol" if $got_symbol && refaddr($got_symbol) != refaddr($stash->get_symbol($with_sigil));
+        croak "$from already has $symbol" 
+            if $got_symbol && refaddr($got_symbol) != refaddr($stash->get_symbol($with_sigil));
 
         next if $got_symbol && refaddr($stash->get_symbol($with_sigil)) == refaddr($got_symbol);
 
