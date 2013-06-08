@@ -75,7 +75,7 @@ Only the following export functionality is provided:
 
 =item * everything defined for export is exported by default
 
-=item * common error checks
+=item * basic error checks
 
 =bach
 
