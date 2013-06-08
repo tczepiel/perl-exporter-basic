@@ -1,9 +1,12 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
-use t::Exporter::Tiny qw(a);
+use Test::More tests => 3;
+use t::Exporter::Tiny qw(foo %a A);
 
-is(a(),1);
+is(foo(),1);
 
+is($a{a},1);
+
+is(A,1);
 

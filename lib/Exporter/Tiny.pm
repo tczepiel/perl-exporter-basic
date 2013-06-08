@@ -17,8 +17,15 @@ sub _import {
 
         croak "are you sure you want to import '$symbol'?" unless $symbol;
 
+        if (!index($symbol,'*',0)) {
+            no strict 'refs';
+            my ($name) = ( $symbol =~ s/^\*// );
+            *{"${to}::${name}"} = *{"${from}::${name}"};
+            next;
+        }
+
         my $with_sigil 
-            =  scalar grep({ !index($symbol,$_,0)} (qw( $ % @ & )))
+            =  scalar grep({ !index($symbol,$_,0)} (qw( $ % @ & *)))
                 ? $symbol : '&'.$symbol;
 
         my $got_symbol = $pkg_stash->get_symbol($with_sigil);
