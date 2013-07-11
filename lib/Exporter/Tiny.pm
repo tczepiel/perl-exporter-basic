@@ -87,7 +87,10 @@ Please report any bugs on L<http://rt.cpan.org>
 
 L<Exporter>
 
-<Exporter::TypeTiny>
+L<Sub::Exporter>
+
+L<Exporter::TypeTiny>
+
 
 =head1 AUTHOR
 
