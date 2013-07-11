@@ -1,4 +1,4 @@
-package Exporter::Tiny;
+package Exporter::Basic;
 
 our $VERSION = "0.01";
 use strict;
@@ -52,12 +52,12 @@ sub import {
 
 =head1 NAME
 
-Exporter::Tiny
+Exporter::Basic
 
 =head1 SYNOPSIS
 
     package MyApp;
-    use Exporter::Tiny qw(foo bar);
+    use Exporter::Basic qw(foo bar);
 
     ...;
 
