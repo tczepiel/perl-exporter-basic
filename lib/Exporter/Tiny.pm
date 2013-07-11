@@ -87,6 +87,8 @@ Please report any bugs on L<http://rt.cpan.org>
 
 L<Exporter>
 
+<Exporter::TypeTiny>
+
 =head1 AUTHOR
 
 Tomasz Czepiel E<lt>tjmc@cpan.orgE<gt>
