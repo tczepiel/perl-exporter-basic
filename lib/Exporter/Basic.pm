@@ -15,7 +15,7 @@ sub _import {
 
     for my $symbol (@what) {
 
-        croak "are you sure you want to import '$symbol'?" unless $symbol;
+        croak "are you sure you want to import '$symbol'?" unless $symbol && $symbol !~ /^[0-9]*$/;
 
         my $with_sigil 
             =  scalar grep({ !index($symbol,$_,0)} (qw( $ % @ & )))
